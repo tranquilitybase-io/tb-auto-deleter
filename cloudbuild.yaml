@@ -12,7 +12,7 @@ steps:
       - --trigger-topic=run-tb-deleter-script
       - --timeout=540
       - --memory=512
-      - --project=tb-auto-deleter
+      - --project=auto-delete-329513
       - --region=europe-west2
     env:
       - EXCLUDE_DELETE_LABEL=dont-delete
