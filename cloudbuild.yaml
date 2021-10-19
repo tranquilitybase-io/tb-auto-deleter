@@ -5,7 +5,7 @@ steps:
       - functions
       - deploy
       - project-auto-delete
-      - --service-account=auto-delete-329513@appspot.gserviceaccount.com
+#      - --service-account=auto-delete-329513@appspot.gserviceaccount.com
       - --entry-point=delete_tbase_deployments
       - --runtime=python37
       - --source=cloud-function
