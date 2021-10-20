@@ -13,4 +13,4 @@ steps:
       - --memory=512
       - --project=auto-delete-329513
       - --region=europe-west2
-      - --set-env-vars="EXCLUDE_DELETE_LABEL=dont-delete, is_cloud_run=True, dry_run=$_DRY_RUN, ROOT_PROJECT=$_ROOT_PROJECT, TEST_OUTSIDE_SCOPE=$_TEST_OUTSIDE_SCOPE, WebHook=$_WEBHOOK"
+      - --set-env-vars="EXCLUDE_DELETE_LABEL=dont-delete,is_cloud_run=True,dry_run=$_DRY_RUN,ROOT_PROJECT=$_ROOT_PROJECT,TEST_OUTSIDE_SCOPE=$_TEST_OUTSIDE_SCOPE,WebHook=$_WEBHOOK"
