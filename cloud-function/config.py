@@ -8,12 +8,12 @@ global credentials
 def establish_gcp_credentials():
     global credentials
 
-#     if not is_cloud_run:
-#         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "credentials/credentials.json"
-#         credentials_path = os.environ["GOOGLE_APPLICATION_CREDENTIALS"]
-#         credentials = service_account.Credentials.from_service_account_file(credentials_path)
-#     else:
-    credentials = GoogleCredentials.get_application_default()
+    if is_cloud_run:
+        credentials = GoogleCredentials.get_application_default()
+    else:
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "credentials/credentials.json"
+        credentials_path = os.environ["GOOGLE_APPLICATION_CREDENTIALS"]
+        credentials = service_account.Credentials.from_service_account_file(credentials_path)
 
 
 def get_env(name: str, default: str) -> str:
@@ -60,6 +60,7 @@ print("EXCLUDE_DELETE_LABEL: " + EXCLUDE_DELETE_LABEL)
 print("EXCLUDE_EMPTY_FOLDER: " + str(EXCLUDE_EMPTY_FOLDER))
 print("TEST_OUTSIDE_SCOPE: " + str(TEST_OUTSIDE_SCOPE))
 print("ROOT_PROJECT: " + ROOT_PROJECT)
+print("ReportWebhook: " + ReportWebhook)
 print("---------------------------")
 print("")
 
