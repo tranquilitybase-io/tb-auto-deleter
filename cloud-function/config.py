@@ -8,12 +8,12 @@ global credentials
 def establish_gcp_credentials():
     global credentials
 
-    if is_cloud_run:
-        credentials = GoogleCredentials.get_application_default()
-    else:
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "credentials/credentials.json"
-        credentials_path = os.environ["GOOGLE_APPLICATION_CREDENTIALS"]
-        credentials = service_account.Credentials.from_service_account_file(credentials_path)
+#     if is_cloud_run:
+      credentials = GoogleCredentials.get_application_default()
+#     else:
+#         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "credentials/credentials.json"
+#         credentials_path = os.environ["GOOGLE_APPLICATION_CREDENTIALS"]
+#         credentials = service_account.Credentials.from_service_account_file(credentials_path)
 
 
 def get_env(name: str, default: str) -> str:
