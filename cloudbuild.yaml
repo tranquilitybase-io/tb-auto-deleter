@@ -13,7 +13,7 @@ steps:
       - --memory=512
       - --project=auto-delete-329513
       - --region=europe-west2
-      - --env-vars-file=env.prod.yaml
+#      - --env-vars-file=env.prod.yaml
     env:
       - EXCLUDE_DELETE_LABEL=dont-delete
       - is_cloud_run=True
