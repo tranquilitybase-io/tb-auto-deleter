@@ -60,7 +60,6 @@ print("EXCLUDE_DELETE_LABEL: " + EXCLUDE_DELETE_LABEL)
 print("EXCLUDE_EMPTY_FOLDER: " + str(EXCLUDE_EMPTY_FOLDER))
 print("TEST_OUTSIDE_SCOPE: " + str(TEST_OUTSIDE_SCOPE))
 print("ROOT_PROJECT: " + ROOT_PROJECT)
-print("ReportWebhook: " + ReportWebhook)
 print("---------------------------")
 print("")
 
