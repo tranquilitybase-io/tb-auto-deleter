@@ -13,7 +13,7 @@ steps:
       - --memory=512
       - --project=auto-delete-329513
       - --region=europe-west2
-      - --set-env-vars=EXCLUDE_EMPTY_FOLDER="Shared Services"
+      - --set-env-vars=EXCLUDE_EMPTY_FOLDER="^##^Shared Services, Applications, tranquilitybase-development"
       - --set-env-vars=EXCLUDE_DELETE_LABEL=dont-delete
       - --set-env-vars=is_cloud_run=True
       - --set-env-vars=dry_run=$_DRY_RUN
