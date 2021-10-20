@@ -69,8 +69,8 @@ def run_system_checks():
         cannot_create_project(TEST_OUTSIDE_SCOPE)
 
         # in scope:
-        print("")
-        can_create_and_delete_project(ROOT_PROJECT)
+#         print("")
+#         can_create_and_delete_project(ROOT_PROJECT)
     except Exception as e:
         message = "\nSystem checks failed\n"
         message += str(e)
