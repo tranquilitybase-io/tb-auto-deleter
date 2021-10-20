@@ -36,7 +36,7 @@ def str_to_bool(s):
 
 
 def str_to_list(string_list: str):
-    un_trimmed = string_list.split(",")
+    un_trimmed = string_list.split("#")
     trimmed = []
     for item in un_trimmed:
         trimmed.append(item.strip())
