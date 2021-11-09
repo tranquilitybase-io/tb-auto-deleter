@@ -63,10 +63,10 @@ def run_system_checks():
     print("- Running system checks -")
     try:
         # out of scope
-        print("")
-        cannot_view_folder(TEST_OUTSIDE_SCOPE)
-        print("")
-        cannot_create_project(TEST_OUTSIDE_SCOPE)
+#         print("")
+#         cannot_view_folder(TEST_OUTSIDE_SCOPE)
+#         print("")
+#         cannot_create_project(TEST_OUTSIDE_SCOPE)
 
         # in scope:
 #         print("")
