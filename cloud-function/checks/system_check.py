@@ -59,21 +59,22 @@ def can_create_and_delete_project(scope_folder: str):
 
 
 def run_system_checks():
-    print("")
-    print("- Running system checks -")
-    try:
-        # out of scope
-#         print("")
-#         cannot_view_folder(TEST_OUTSIDE_SCOPE)
-#         print("")
-#         cannot_create_project(TEST_OUTSIDE_SCOPE)
-
-        # in scope:
-#         print("")
-#         can_create_and_delete_project(ROOT_PROJECT)
-    except Exception as e:
-        message = "\nSystem checks failed\n"
-        message += str(e)
-        raise Exception(message)
-
-    print("- System checks passed! -")
+    pass
+#     print("")
+#     print("- Running system checks -")
+#     try:
+#         # out of scope
+# #         print("")
+# #         cannot_view_folder(TEST_OUTSIDE_SCOPE)
+# #         print("")
+# #         cannot_create_project(TEST_OUTSIDE_SCOPE)
+#
+#         # in scope:
+# #         print("")
+# #         can_create_and_delete_project(ROOT_PROJECT)
+#     except Exception as e:
+#         message = "\nSystem checks failed\n"
+#         message += str(e)
+#         raise Exception(message)
+#
+#     print("- System checks passed! -")
